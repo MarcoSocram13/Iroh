@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IROH — Heavy Duty · Entrenamiento</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='80'>🔥</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,600&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+<div class="bg-glow"></div>
+<div id="embers" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ══════════ NAVEGACIÓN ══════════ -->
+<nav class="nav" id="nav">
+  <a class="logo" href="#inicio" aria-label="IROH — inicio">
+    <svg viewBox="0 0 24 28" fill="none"><path d="M12 1c2.5 5-4 7-3 12 .6 3 2.6 4.4 5 4.4s6-1.7 6-7c0-3-1.5-5-3-6.5.3 2.6-.8 3.8-2 4C16 5.5 14 2.5 12 1Z" fill="#ff7849"/><path d="M11 13.5c-3.8.8-6 3.2-6 6.5 0 3.5 3 6 7 6s7-2.6 7-6c0-1.9-.9-3.5-2.2-4.6-.2 2.3-1.4 3.4-2.8 3.6.5-2.2-.5-4.3-3-5.5Z" fill="#e5484d"/></svg>
+    IROH
+  </a>
+  <div class="nav-links" id="navLinks">
+    <a href="#inicio">Inicio</a>
+    <a href="#metodo">El método</a>
+    <a href="#carpetas">Ejercicios</a>
+    <a href="#instructor">Instructor</a>
+    <a href="#certificados">Certificados</a>
+  </div>
+  <div class="nav-right">
+    <div class="search" id="searchWrap">
+      <button id="searchBtn" aria-label="Buscar ejercicio">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2.4"><circle cx="10.5" cy="10.5" r="7"/><path d="m16 16 5 5"/></svg>
+      </button>
+      <input id="searchInput" type="text" placeholder="Buscar ejercicio…" aria-label="Buscar ejercicio">
+    </div>
+    <button class="pill" id="planBtn" title="Ver mi plan"><span>MI PLAN</span> <b id="planCount">0</b></button>
+    <div class="avatar" title="Marcos Alejo Blohsel">M</div>
+    <button id="burger" aria-label="Menú">☰</button>
+  </div>
+</nav>
+
+<!-- ══════════ BILLBOARD ══════════ -->
+<header class="billboard" id="inicio">
+  <div class="billboard-art" aria-hidden="true"></div>
+  <div class="billboard-mark" aria-hidden="true">HD</div>
+  <div class="bill-content">
+    <p class="kicker" id="kicker" data-text="● SERIE ORIGINAL IROH · MÉTODO HEAVY DUTY">● SERIE ORIGINAL IROH · MÉTODO HEAVY DUTY</p>
+    <h1 class="bill-title"><span style="--i:0">HEAVY</span> <span class="accent" style="--i:1">DUTY</span></h1>
+    <p class="bill-sub">El entrenamiento de la serie única llevada al fallo — según el libro de <b>Mike Mentzer</b>. Seleccionado y dirigido por el entrenador personal <b>Marcos Alejo Blohsel</b>.</p>
+    <div class="bill-meta">
+      <span class="match">98% intensidad</span><span>7 grupos musculares</span><span>Series efectivas al fallo</span><span class="tag-hd">HD</span>
+    </div>
+    <div class="bill-actions">
+      <a class="btn btn-fire" href="#carpetas">▶ Entrenar ahora</a>
+      <a class="btn btn-ghost" href="#metodo">ℹ El método</a>
+      <button class="btn btn-ghost" id="heroPlan">＋ Mi plan</button>
+    </div>
+    <blockquote class="bill-quote">«El músculo crece por la intensidad del esfuerzo, no por la cantidad de tiempo que pasás en el gimnasio.»<cite>— Mike Mentzer · Heavy Duty</cite></blockquote>
+  </div>
+  <a class="scroll-hint" href="#metodo" aria-label="Bajar">▼</a>
+</header>
+
+<!-- ══════════ EL MÉTODO ══════════ -->
+<section class="section" id="metodo">
+  <div class="sec-head reveal"><span class="eyebrow scramble">LOS 5 PRINCIPIOS</span><h2>Pocas series. Todo el fuego.</h2></div>
+  <p class="sec-note reveal">La base del Heavy Duty de Mentzer, resumida en cinco reglas que ordenan cada carpeta de entrenamiento.</p>
+  <div class="principles reveal">
+    <div class="pr" style="--pc:#e5484d"><span class="ic">🔥</span><h3>Intensidad</h3><p>Una serie llevada al fallo absoluto vale más que diez hechas a medias.</p></div>
+    <div class="pr" style="--pc:#ff7849"><span class="ic">✂️</span><h3>Brevedad</h3><p>Volumen mínimo: entrás, estimulás, salís. El gimnasio no es tu casa.</p></div>
+    <div class="pr" style="--pc:#f0a340"><span class="ic">⏱️</span><h3>Cadencia lenta</h3><p>4-2-4: cuatro al bajar, pausa, cuatro al subir. Cero impulso.</p></div>
+    <div class="pr" style="--pc:#9dbb8f"><span class="ic">🌙</span><h3>Descanso de sabio</h3><p>El músculo crece fuera del gimnasio: 72–96 h entre sesiones del mismo grupo.</p></div>
+    <div class="pr" style="--pc:#d9a441"><span class="ic">📈</span><h3>Progresión</h3><p>Más peso o más reps en cada sesión. Registrá todo en tus series.</p></div>
+  </div>
+</section>
+
+<!-- ══════════ RESULTADOS (búsqueda / plan) ══════════ -->
+<section class="section hidden" id="resultados">
+  <div class="res-head">
+    <h3 id="resTitle">Resultados</h3>
+    <button class="res-clear" id="resClear">✕ Limpiar</button>
+  </div>
+  <div class="grid" id="resGrid"></div>
+</section>
+
+<!-- ══════════ CARPETAS DE EJERCICIOS ══════════ -->
+<section class="section" id="carpetas">
+  <div class="sec-head reveal"><span class="eyebrow scramble">BIBLIOTECA DE EJERCICIOS</span><h2>Elegí tu grupo muscular</h2></div>
+  <p class="sec-note reveal">Tocá una carpeta para desplegar sus cartas. Cada carta abre la ficha del ejercicio con sus series — cargadas en <b>app.js</b>, listas para que edites pesos y reps.</p>
+  <div class="folders reveal" id="folders"></div>
+</section>
+
+<!-- ══════════ INSTRUCTOR ══════════ -->
+<section class="section" id="instructor">
+  <div class="sec-head reveal"><span class="eyebrow scramble">EL INSTRUCTOR</span></div>
+  <div class="instructor-grid">
+    <div class="poster reveal" aria-label="Póster de Marcos Alejo Blohsel">
+      <div class="p-name">
+        <div class="p-initials">MAB</div>
+        <div class="p-full">MARCOS ALEJO BLOHSEL</div>
+        <div class="p-role">INSTRUCTOR DE MUSCULACION · ENTRENADOR PERSONAL</div>
+      </div>
+      <span class="p-meta">IROH · MÉTODO HEAVY DUTY</span>
+      <svg class="stamp" viewBox="0 0 100 100" aria-hidden="true">
+        <defs><path id="circ" d="M50,50 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0"/></defs>
+        <text><textPath href="#circ">ENTRENADOR PERSONAL · MUSCULACIÓN · </textPath></text>
+        <text class="flame-c" x="50" y="56" text-anchor="middle">🔥</text>
+      </svg>
+    </div>
+    <div>
+      <h2 class="inst-name reveal">MARCOS ALEJO BLOHSEL</h2>
+      <p class="inst-role reveal">INSTRUCTOR EN MUSCULACIÓN · ENTRENADOR PERSONAL</p>
+      <!-- ✎ EDITÁ ACÁ: biografía real -->
+      <div class="inst-bio reveal">
+        <p>Instructor en musculación y entrenador personal. Entrena <b>desde los 11 años</b> y, casi sin saberlo, ya lo hacía al estilo Heavy Duty: <b>pocas series, intensidad máxima y descansos largos</b>. Lo suyo siempre fue el esfuerzo honesto — técnica estricta y una intensidad que no se negocia.</p>
+        <p>En <b>2026</b> descubrió el <b>Heavy Duty de Mike Mentzer</b> y encontró el nombre exacto de lo que llevaba años practicando por instinto. Así nació <b>IROH</b>: la confirmación de una forma de entrenar — fuego en la serie, calma de té en la recuperación.</p>
+      </div>
+      <blockquote class="inst-quote reveal">«Entrená como si todo dependiera de una sola serie. Porque, en este método, depende.»</blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CERTIFICADOS (2 espacios) ══════════ -->
+<section class="section" id="certificados">
+  <div class="sec-head reveal"><span class="eyebrow scramble">FORMACIÓN VERIFICADA</span><h2>Certificados</h2></div>
+  <p class="sec-note reveal">Tocá un certificado para agrandarlo. Las imágenes se cargan en el bloque <b>CERTIFICADOS</b> de <b>app.js</b>.</p>
+  <div class="certs reveal" id="certGrid"></div>
+</section>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer>
+  <div class="f-grid">
+    <div>
+      <a class="logo" href="#inicio">
+        <svg viewBox="0 0 24 28" fill="none" width="20"><path d="M12 1c2.5 5-4 7-3 12 .6 3 2.6 4.4 5 4.4s6-1.7 6-7c0-3-1.5-5-3-6.5.3 2.6-.8 3.8-2 4C16 5.5 14 2.5 12 1Z" fill="#ff7849"/></svg>
+        IROH
+      </a>
+      <p class="f-tag">«El fuego entrena el cuerpo; la paciencia lo construye. Descansá como un sabio y arderás como un maestro.»</p>
+      <button id="teaBtn">🍵 Té de la sabiduría</button>
+    </div>
+    <div>
+      <h5>NAVEGAR</h5>
+      <a href="#metodo">El método</a><a href="#carpetas">Ejercicios</a><a href="#instructor">Instructor</a><a href="#certificados">Certificados</a>
+    </div>
+    <div>
+      <h5>MÉTODO</h5>
+      <a href="#metodo">Intensidad al fallo</a><a href="#metodo">Cadencia 4-2-4</a><a href="#metodo">Descanso 72–96 h</a><a href="#carpetas">Registro de series</a>
+    </div>
+  </div>
+  <p class="f-legal">IROH · Proyecto inspirado en la filosofía HEAVY DUTY de Mike Mentzer y en la estética de Netflix. Contenido educativo: antes de iniciar un programa de fuerza consultá con un profesional de la salud.<br>© 2026 Marcos Alejo Blohsel — Método IROH. Hecho con 🔥 y una taza de té.</p>
+</footer>
+
+<!-- ══════════ MODAL DE EJERCICIO ══════════ -->
+<div class="overlay" id="modal" role="dialog" aria-modal="true">
+  <div class="modal">
+    <button class="x" data-close aria-label="Cerrar">✕</button>
+    <div class="m-hero" id="mHero">
+      <p class="m-kicker" id="mKicker"></p>
+      <h3 id="mTitle"></h3>
+      <div class="m-chips" id="mChips"></div>
+    </div>
+    <div class="m-body">
+      <div class="m-left">
+        <p id="mDesc"></p>
+        <blockquote class="m-tip" id="mTip"></blockquote>
+        <div class="m-file" id="mFile"></div>
+      </div>
+      <div class="sets-panel">
+        <div class="sp-head"><span>SERIES REGISTRADAS</span><b id="mProgTxt">0/0</b></div>
+        <div class="sp-bar"><i id="mProgBar"></i></div>
+        <div id="mSets"></div>
+        <div class="sp-actions">
+          <button id="mAll">✔ Completar todas</button>
+          <button id="mReset">Reiniciar</button>
+          <button id="mPlan">＋ Mi plan</button>
+        </div>
+        <p class="sp-note">✎ Pesos y reps se editan en <code>GRUPOS</code> dentro de <code>app.js</code>.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════ LIGHTBOX CERTIFICADO (imagen agrandada) ══════════ -->
+<div class="overlay" id="lightbox" role="dialog" aria-modal="true">
+  <button class="x" data-close aria-label="Cerrar">✕</button>
+  <div class="lb-panel">
+    <img id="lbImg" alt="Certificado agrandado">
+    <div class="lb-cap"><b id="lbTitle"></b><span id="lbMeta"></span></div>
+  </div>
+</div>
+
+<div id="toast" role="status"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
